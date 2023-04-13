@@ -8,6 +8,8 @@
 }
 
 body {
+  display: flex;
+  gap: 50px;
   background-color: #181818;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,6 +22,32 @@ section {
   display: flex;
   justify-items: center;
   align-items: center;
+}
+
+table{
+
+  position: cover;
+  background: linear-gradient(
+      0deg,
+      #d2fc68d4 0%,
+      #FAC220 100%, #e6710a 25%
+    );
+  align-items: center; 
+  justify-content: center;
+  border: solid black;
+  border-radius: 5px;
+}
+
+table th {
+text-justify: center;
+}
+
+.resumo{
+  background: linear-gradient(
+      0deg,
+      #d2fc68d4 0%,
+      #FAC220 100%, #e6710a 25%
+    );
 }
 
 .informacoes {
@@ -82,7 +110,7 @@ input{
     font-weight: bold;
 }
 
-.btn-login {
+.btn-adicionar, .btn-calcular {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -98,43 +126,7 @@ input{
     align-items: center;
 }
 
-.btn-esqueci {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  margin: 10px auto;
-  font-weight: 300;
-  font-size: 12px;
-  color: #181818;
-}
-
-table{
-    display: flex;
-    margin-left: 100px ;
-    margin-bottom: 400px;
-    background: linear-gradient(
-        0deg,
-        #d2fc68d4 0%,
-        #FAC220 100%, #e6710a 25%
-      );
-    margin-top: 15px;
-    align-items: center; 
-    border: solid black;
-    border-radius: 5px;
-}
-
-.resumo{
-    position:absolute;
-    margin-top: 100px;
-    margin-left:400px;
-    background: linear-gradient(
-        0deg,
-        #d2fc68d4 0%,
-        #FAC220 100%, #e6710a 25%
-      );
-}
-
 table td{
-    margin-inline-start: ;
+    
     border: solid black;
 }

@@ -42,6 +42,9 @@ table{
 .resumo{
   display:flex;
   flex-direction: column;
+  border-radius: 10px;
+  height: 500px;
+  width: 300px;
   background: linear-gradient(
       0deg,
       #d2fc68d4 0%,

@@ -3,7 +3,7 @@ const calcularBtn = document.querySelector('.btn-calcular');
 var tabela = document.getElementById('tabela');
 
 adicionarBtn.addEventListener("click", adicionarTarefas);
-calcularBtn.addEventListener("click", criarLink);
+calcularBtn.addEventListener("click", mostrarResumo);
 
 function adicionarTarefas() {
     let opcoes = document.getElementById('option').value;
@@ -31,13 +31,16 @@ function formatarData(data){
     return `${dia}/${mes}/${ano}`; // Retorna a data formatada no formato "dd/mm/yyyy"
 }
 
-function calcularExtrato() {
-    var resumo = document.createElement("p");
-    resumo.textContent = "Total: " +  +"\n";
+function mostrarResumo() {
+    let colunaAtual = calcularExtrato();
+    var resumoTexto = document.createElement("a");
+    resumoTexto.textContent = "Total: " + colunaAtual.cells +"\n";
     const resumo = document.querySelector(".resumo");
-    resumo.appendChild(resumo);
+    resumo.appendChild(resumoTexto);
   }
 
-function calcularTotal(){
-    
+function calcularExtrato(){
+    var colunaAtual = tabela.rows[0].cells;
+    colunaAtual.innerHTML = "seila"
+    return colunaAtual;
 }

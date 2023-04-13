@@ -1,7 +1,9 @@
 const adicionarBtn = document.querySelector('.btn-adicionar');
+const calcularBtn = document.querySelector('.btn-calcular');
 var tabela = document.getElementById('tabela');
 
 adicionarBtn.addEventListener("click", adicionarTarefas);
+calcularBtn.addEventListener("click", criarLink);
 
 function adicionarTarefas() {
     let opcoes = document.getElementById('option').value;
@@ -19,10 +21,23 @@ function adicionarTarefas() {
     }
 }
 
+
+
 function formatarData(data){
     const partesData = data.value.split('-');
     const ano = partesData[0];
     const mes = partesData[1];
     const dia = partesData[2]; 
     return `${dia}/${mes}/${ano}`; // Retorna a data formatada no formato "dd/mm/yyyy"
+}
+
+function calcularExtrato() {
+    var resumo = document.createElement("p");
+    resumo.textContent = "Total: " +  +"\n";
+    const resumo = document.querySelector(".resumo");
+    resumo.appendChild(resumo);
+  }
+
+function calcularTotal(){
+    
 }

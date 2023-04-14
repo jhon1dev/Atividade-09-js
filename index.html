@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Atividade 04</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <title>Atividade 04</title>
-</head>
+  <body>
+    <section class="informacoes">
+      <h3>CALCULADORA</h3>
+      <p></p>
+      <div class="conteiner">
+        <form>
+          <select name="Categoria" id="option">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Mercado">Mercado</option>
+            <option value="Telefone">Telefone</option>
+            <option value="Escola">Escola</option>
+          </select>
+          <input type="text" id="valor" placeholder="Valor" />
 
-<body>
-  <section class="informacoes">
-    <h3>CALCULADORA</h3>
-    <p></p>
-    <div class="conteiner">
-      <form>
-        <select name="Categoria" id="option">
-          <option value="" disabled selected>Selecione uma opção</option>
-          <option value="Mercado">Mercado</option>
-          <option value="Telefone">Telefone</option>
-          <option value="Escola">Escola</option>
-        </select>
-        <input type="text" id="valor" placeholder="Valor" />
-
-        <input type="date" id="data" placeholder="Data" required min=""/>
-      </form>
-      <div class="botoes">
-        <a class="btn-adicionar" href="#">Adicionar</a>
-        <a class="btn-calcular" href="#">Calcular</a>
+          <input type="date" id="data" placeholder="Data" required min="" />
+        </form>
+        <div class="botoes">
+          <a class="btn-adicionar" href="#">Adicionar</a>
+          <a class="btn-calcular" href="#">Calcular</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="extrato">
-    <table id="tabela">
-      <tr>
-        <th>Extrato Bancário</th>
-      </tr>
-    </table>
-  </section>
-  <section class="resumo">
-    <h1>RESUMO</h1>
-  </section>
-</body>
-
+    </section>
+    <section class="extrato">
+      <table id="tabela">
+        <tr>
+          <th>Extrato Bancário</th>
+        </tr>
+      </table>
+    </section>
+    <section class="resumo">
+      <h1>RESUMO</h1>
+    </section>
+  </body>
 </html>

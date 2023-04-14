@@ -18,38 +18,30 @@ body {
   overflow-x: hidden;
 }
 
-section {
+.extrato {
   display: flex;
   justify-items: center;
   align-items: center;
 }
 
-table{
+table {
   justify-content: center;
   position: cover;
-  background: linear-gradient(
-      0deg,
-      #d2fc68d4 0%,
-      #FAC220 100%, #e6710a 25%
-    );
-  align-items: center; 
+  background: linear-gradient(0deg, #d2fc68d4 0%, #fac220 100%, #e6710a 25%);
+  align-items: center;
   justify-content: center;
   border: solid black;
   border-radius: 5px;
   text-justify: center;
 }
 
-.resumo{
-  display:flex;
+.resumo {
+  display: flex;
   flex-direction: column;
   border-radius: 10px;
   height: 500px;
   width: 300px;
-  background: linear-gradient(
-      0deg,
-      #d2fc68d4 0%,
-      #FAC220 100%, #e6710a 25%
-    );
+  background: linear-gradient(0deg, #d2fc68d4 0%, #fac220 100%, #e6710a 25%);
 }
 
 .informacoes {
@@ -59,11 +51,7 @@ table{
   height: 480px;
   width: 300px;
   background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    #d2fc68d4 0%,
-    #FAC220 100%, #e6710a 25%
-  );
+  background: linear-gradient(0deg, #d2fc68d4 0%, #fac220 100%, #e6710a 25%);
   padding: 20px;
   border-radius: 20px;
 }
@@ -83,6 +71,11 @@ p {
   color: darkgreen;
 }
 
+h1{
+  display: flex;
+  justify-content: center;
+}
+
 h3 {
   margin-top: 30%;
   color: #181818;
@@ -97,7 +90,8 @@ h3 {
   text-transform: uppercase;
 }
 
-form input, select {
+form input,
+select {
   display: block;
   margin: 12px auto;
   text-align: center;
@@ -107,12 +101,13 @@ form input, select {
   border: none;
 }
 
-input{
-    color: black;
-    font-weight: bold;
+input {
+  color: black;
+  font-weight: bold;
 }
 
-.btn-adicionar, .btn-calcular {
+.btn-adicionar,
+.btn-calcular {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -122,13 +117,12 @@ input{
   border-radius: 5px;
 }
 
-.botoes{
-    display: flex;
-    gap: 20%;
-    align-items: center;
+.botoes {
+  display: flex;
+  gap: 20%;
+  align-items: center;
 }
 
-table td{
-    
-    border: solid black;
+table td {
+  border: solid black;
 }
